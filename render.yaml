@@ -1,0 +1,6 @@
+services:
+  - name: notif-qpon
+    type: worker  # Pastikan ini diatur sebagai worker untuk menjalankan background task
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python notif-qpon.py"
